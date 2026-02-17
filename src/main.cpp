@@ -319,9 +319,12 @@ void computeRects()
 		if (last_yday == -1) last_yday = nowL.tm_yday;
 		bool dayChanged = (nowL.tm_yday != last_yday);
 		if (dayChanged) last_yday = nowL.tm_yday;
-		
 		if (nowL.tm_sec == 0) {
-			if (dayChanged || (partial_count > 0 && (partial_count % 30 == 0))) {
+			// if (dayChanged || (partial_count > 0 && (partial_count % 30 == 0))) {
+			// 	Serial.println("Full refresh.");
+			// 	drawFull(nowL);
+			// }
+			if (dayChanged || (nowL.tm_min % 30 == 0)) {
 				Serial.println("Full refresh.");
 				drawFull(nowL);
 			}

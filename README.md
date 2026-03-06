@@ -2,7 +2,7 @@
 ## Note: Still working on it
 
 ## Hardware Used
-- Dev Board : `XIAO ESPC2C6`
+- Dev Board : `XIAO ESP32C6`
 - E-Ink Display: `WeAct 4.2in SPI E-ink display SSD1683`
 - RTC Module: `DS3231 Mini`
 

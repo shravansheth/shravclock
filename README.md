@@ -1,4 +1,4 @@
-# SHRAVCLOCk - E-Ink Desk Clock build
+# SHRAVCLOCK - E-Ink Desk Clock build
 ## Note: Still working on it
 
 ## Hardware Used

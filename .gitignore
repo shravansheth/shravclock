@@ -3,4 +3,6 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
-inclue/secrets.h
+include/secrets.h
+.claude
+.DS_Store

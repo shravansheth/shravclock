@@ -700,7 +700,7 @@ static void drawSetupScreen() {
 
         // Info lines in FreeSans12pt7b
         display.setFont(&FreeSans12pt7b);
-        const char* lines[] = {"Setup Mode", "", "WiFi: shravclock-setup", "Pass: shravann", "Open: 192.168.4.1"};
+        const char* lines[] = {"Setup Mode", "", "WiFi: " AP_SSID, "Pass: " AP_PASS, "Open: 192.168.4.1"};
         int y = 100;
         for (auto line : lines) {
             if (line[0] != '\0') {
@@ -1144,7 +1144,7 @@ static void runSetupPortal() {
 
     // Start AP+STA
     WiFi.mode(WIFI_AP_STA);
-    WiFi.softAP("shravclock-setup", "shravann");
+    WiFi.softAP(AP_SSID, AP_PASS);
     Serial.printf("AP IP: %s\n", WiFi.softAPIP().toString().c_str());
 
     // DNS server: respond to every query with 192.168.4.1 → captive portal
